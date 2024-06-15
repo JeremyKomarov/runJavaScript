@@ -8,7 +8,7 @@ pipeline {
                 sh 'node app.js'
             }
         }
-        stage('Run JavaScript') {
+        stage('Testing') {
             steps {
                 sh 'node app.js'
             }
