@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                node app.js
+                sh 'node app.js'
             }
         }
     }
