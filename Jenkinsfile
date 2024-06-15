@@ -3,7 +3,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Run App') {
+            steps {
+                sh 'node app.js'
+            }
+        }
+        stage('Run JavaScript') {
             steps {
                 sh 'node app.js'
             }
